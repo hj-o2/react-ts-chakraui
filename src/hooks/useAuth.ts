@@ -2,12 +2,11 @@ import axios from "axios";
 import { useCallback, useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { User } from "../types/api/User";
+import { User } from "../components/types/api/user";
 import { useMessage } from "./useMessage";
 
 export const useAuth = () => {
   const history = useHistory();
-  console.log(history);
   const { showMessage } = useMessage();
 
   const [loading, setLoading] = useState(false);

@@ -5,8 +5,7 @@ type Props = {
   children: ReactNode;
   disabled?: boolean;
   loading?:boolean;
-  //anyだと動く
-  onClick: any;
+  onClick: () => void;
 };
 
 export const PrimaryButton: VFC<Props> = memo((props) => {
